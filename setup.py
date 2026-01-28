@@ -15,7 +15,7 @@ def get_requirements(file_path:str)->list[str]:
     return requirements
 
 setup(
-    name="Student Performance Prediction",
+    name="Student Performance Indicator",
     version="0.0.1",
     author="Yomna Salama",
     author_email="yomna.salama11@gmail.com",
