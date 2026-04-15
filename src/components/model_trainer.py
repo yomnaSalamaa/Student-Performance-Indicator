@@ -8,7 +8,6 @@ from sklearn.ensemble import(
 )
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
-from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 from xgboost import XGBRegressor
 from catboost import CatBoostRegressor
@@ -44,7 +43,7 @@ class ModelTrainer:
                 "Gradient Boosting": GradientBoostingRegressor(),
                 "Linear Regression": LinearRegression(),
                 "XGBRegressor": XGBRegressor(),
-                "CatBoosting Regressor": CatBoostRegressor(verbose=False),
+                "CatBoosting Regressor": CatBoostRegressor(verbose=False, task_type = "CPU"),
                 "AdaBoost Regressor": AdaBoostRegressor(),
 
             }
